@@ -43,3 +43,8 @@ SDK Tools
 • Android SDK Command-line Tools
 • Android Emulator
 • Platform Tools
+
+
+Test edilecek demo uygulamanın adı ve adresi:
+ApiDemos-debug_v6.0.10.apk
+https://github.com/appium/android-apidemos/releases/download/v6.0.10/ApiDemos-debug.apk

@@ -1,15 +1,22 @@
 package pages;
 
+import driver.DriverManager;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 
 public class ApiDemosPage {
 
-    public By continueAsGuestButton =
-            By.xpath("//*[@text='Continue as a guest']");
+    public By accessibilityElement =
+            By.xpath("//*[@text='Accessibility']");
 
-    public By loginButton =
-            By.xpath("//*[@text='Login']");
 
-    public By skipButton =
-            By.xpath("//*[@text='Skip']");
+
+
+
+//    // Örnekler
+//    public By loginButton =
+//            By.xpath("//*[@text='Login']");
+//
+//    public By skipButton =
+//            By.xpath("//*[@text='Skip']");
 }
