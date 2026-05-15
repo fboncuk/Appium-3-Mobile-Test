@@ -2,7 +2,6 @@ package tests;
 
 import base.BaseTest;
 import driver.DriverManager;
-import io.appium.java_client.AppiumBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ApiDemosPage;
@@ -12,6 +11,7 @@ public class C01_InstallTest extends BaseTest {
 
     ApiDemosPage page = new ApiDemosPage();
 
+    // ApiDemos-debug_v6.0.10.apk uygulamasının telefona yüklendiği doğrulanır
     @Test
     public void verifyAppInstallAndLaunch() {
 
@@ -28,6 +28,7 @@ public class C01_InstallTest extends BaseTest {
         Assert.assertEquals(actualPackage, appPackage);
     }
 
+    // App ana sayfa açıldığı doğrulanır
     @Test
     public void verifyAppIsRunningAndHomeScreenVisible() {
 
@@ -48,6 +49,33 @@ public class C01_InstallTest extends BaseTest {
                 "Home element not visible");
 
         // 4. ekstra check (source debug için)
-        System.out.println(DriverManager.driver.getPageSource());
+        // System.out.println(DriverManager.driver.getPageSource());
     }
+
+    // UI Element Görünürlük testi
+    // Accessibility → Accessibility Node Provider ekranına git. Title görünürlüğünü test et
+    @Test
+    public void verifyAccessibilityNodeProviderVisibility () throws InterruptedException {
+
+        // Accessibility tıklanır
+        driver.findElement(page.accessibilityElement).click();
+        // Accessibility Node Provider tıklanır
+        driver.findElement(page.ANodeProviderElement).click();
+
+        // Ekranda görülen yazı değişkene atanır
+        String actualText1 = driver.findElement(page.ANodeProviderTextElement1).getText();
+
+        // Ekrandaki yazıyı yazdıralım
+        System.out.println("element 1 " + actualText1);
+
+        Thread.sleep(1000);
+
+        // Eğer yazı "Enable TalkBack" içeriyorsa sayfa görünür demektir
+        Assert.assertTrue(actualText1.contains("Enable TalkBack"));
+
+    }
+
+
+
+
 }
