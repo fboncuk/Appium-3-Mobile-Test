@@ -11,6 +11,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
+
         DriverManager.initDriver();
         driver = DriverManager.getDriver();
     }

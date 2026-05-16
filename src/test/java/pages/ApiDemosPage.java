@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class ApiDemosPage {
 
-    // API Demos ana sayfası
+    // API Demos Page locators
     public By accessibilityElement = AppiumBy.accessibilityId("Accessibility");
     public By animationElement = AppiumBy.accessibilityId("Animation");
     public By appElement = AppiumBy.accessibilityId("App");
@@ -17,22 +17,6 @@ public class ApiDemosPage {
     public By preferenceElement = AppiumBy.accessibilityId("Preference");
     public By textElement = AppiumBy.accessibilityId("Text");
     public By viewsElement = AppiumBy.accessibilityId("Views");
-
-    // Accessibility sayfası
-    public By ANodeProviderElement = AppiumBy.accessibilityId("Accessibility Node Provider");
-    public By ANodeQueryingElement = AppiumBy.accessibilityId("Accessibility Node Querying");
-    public By AServiceElement = AppiumBy.accessibilityId("Accessibility Service");
-    public By CustomViewElement = AppiumBy.accessibilityId("Custom View");
-
-    // Accessibility Node Provider sayfası
-    // accessibilityId kullanarak
-    public By ANodeProviderTextElement1 = AppiumBy.
-            accessibilityId("Enable TalkBack and Explore-by-touch from accessibility settings. Then touch the colored squares.");
-    // contains xpath kullanarak
-    public By ANodeProviderTextElement2 = AppiumBy.
-            xpath("//android.widget.TextView[contains(@text,'Enable TalkBack')]");
-
-
 
     // Ornek Locatorlar
     // 1. ÖNCELİK: AccessibilityId en iyisi
