@@ -3,7 +3,7 @@ package pages;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 
-public class ViewPage {
+public class ViewsPage {
 
     // Views locators
     public By ControlsElement = AppiumBy.accessibilityId("Controls");

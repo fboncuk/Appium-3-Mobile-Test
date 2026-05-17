@@ -70,8 +70,6 @@ public class C01_InstallTest extends BaseTest {
         // Ekrandaki yazıyı yazdıralım
         System.out.println("element 1 " + actualText1);
 
-        Thread.sleep(1000);
-
         // Eğer yazı "Enable TalkBack" içeriyorsa sayfa görünür demektir
         Assert.assertTrue(actualText1.contains("Enable TalkBack"));
 

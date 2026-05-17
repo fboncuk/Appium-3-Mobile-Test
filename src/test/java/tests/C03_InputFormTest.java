@@ -14,7 +14,7 @@ public class C03_InputFormTest extends BaseTest {
     AccessibilityPage accessibilityPage = new AccessibilityPage();
     AnimationPage animationPage = new AnimationPage();
     ContentPage contentPage = new ContentPage();
-    ViewPage viewPage = new ViewPage();
+    ViewsPage viewsPage = new ViewsPage();
 
     // 1. Test
     @Test
@@ -24,13 +24,13 @@ public class C03_InputFormTest extends BaseTest {
 
         // öncelikle 1. Light Theme sayfasına ulaşalım
         driver.findElement(apiDemosPage.viewsElement).click();
-        driver.findElement(viewPage.ControlsElement).click();
-        driver.findElement(viewPage.LightThemeElement).click();
+        driver.findElement(viewsPage.ControlsElement).click();
+        driver.findElement(viewsPage.LightThemeElement).click();
 
         String expectedText = "deneme yazisi";
-        driver.findElement(viewPage.TextBoxElement).sendKeys(expectedText);
+        driver.findElement(viewsPage.TextBoxElement).sendKeys(expectedText);
 
-        String actualText = driver.findElement(viewPage.TextBoxElement).getText();
+        String actualText = driver.findElement(viewsPage.TextBoxElement).getText();
 
         Assert.assertEquals(actualText,expectedText);
 
