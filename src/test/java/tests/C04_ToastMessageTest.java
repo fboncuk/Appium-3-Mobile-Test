@@ -25,6 +25,8 @@ public class C04_ToastMessageTest extends BaseTest {
     @Test
     public void toastNotification (){
 
+        // Toast Message: Pop-up mesajalarına verilen bir isimdir
+        // Ekranda bir süre görünüp kaybolduğu için locator almak için özel yöntem gerekir
         // Ana sayfadan alt sayfalara doğru 3 tıklama ile girilir
         driver.findElement(apiDemosPage.appElement).click();
         driver.findElement(appPage.NotificationElement).click();

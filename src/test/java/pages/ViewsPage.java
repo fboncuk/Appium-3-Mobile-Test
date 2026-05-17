@@ -8,6 +8,7 @@ public class ViewsPage {
     // Views locators
     public By ControlsElement = AppiumBy.accessibilityId("Controls");
     public By LightThemeElement = AppiumBy.accessibilityId("1. Light Theme");
+    public By WebViewElement = AppiumBy.accessibilityId("WebView");
 
     // Views-Controls-1. Light Theme locators
     public By SaveElement = AppiumBy.id("io.appium.android.apis:id/button");

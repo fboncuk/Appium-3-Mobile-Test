@@ -3,10 +3,11 @@
 
     <test name="Mobile Tests">
         <classes>
-            <class name="tests.C01_InstallTest"/>
-            <class name="tests.C02_NavigationTest"/>
-            <class name="tests.C03_InputFormTest"/>
-            <class name="tests.C04_ToastMessageTest"/>
+            <class name = "tests.C01_InstallTest"/>
+            <class name = "tests.C02_NavigationTest"/>
+            <class name = "tests.C03_InputFormTest"/>
+            <class name = "tests.C04_ToastMessageTest"/>
+            <class name = "tests.C05_ScrollTest"/>
         </classes>
     </test>
 
